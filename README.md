@@ -1,4 +1,4 @@
-<h1 align="center">Unused CSS Remover</h1>
+<h1 align="center">JavaScript Simple Task Scheduler</h1>
 
 <div align="center">
   :steam_locomotive::train::train::train::train::train:

@@ -81,8 +81,7 @@ export default class Schedule {
 
         for(var i = 0; i < this.distributedTasks.length; i++){
 
-            var task = setInterval(this.taskExecutor, interval * this.distributedTasks[i].length * 1000, i, interval, this);
-
+            var task = setInterval(this.taskExecutor, (interval + 2) * 1000, i, interval, this); //execute taskExecutor every 2 second more than interval for each task
             this.taskExecutor(i, interval, this); //immediately start first task of each chunk
 
             this.distributedTimers.push(task);

@@ -83,6 +83,8 @@ export default class Schedule {
 
             var task = setInterval(this.taskExecutor, interval * this.distributedTasks[i].length * 1000, i, interval, this);
 
+            this.taskExecutor(i, interval, this); //immediately start first task of each chunk
+
             this.distributedTimers.push(task);
         }
 
